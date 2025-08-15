@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: ahamai-telegram-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        value: 8296595788:AAH9sWfwG6O886QPxd5mVCGb_RTEwsYj9nA
+      - key: API_BASE_URL
+        value: https://ahamai-api.officialprakashkrsingh.workers.dev
+      - key: API_KEY
+        value: ahamaibyprakash25
+      - key: BOT_USERNAME
+        value: ahamai_tgbot
